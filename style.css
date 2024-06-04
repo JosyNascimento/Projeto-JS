@@ -1,4 +1,4 @@
-/* home */
+/* sobre nós*/
 
 
 body {
@@ -130,7 +130,7 @@ display: flex;
 }
 
 
-/*sobre nós*/
+/*home*/
 body {
     background-image: url(https://www.cyrela.com.br/sites/default/files/styles/webp/public/2024-02/destaque-desk%20%281%29.png.webp?itok=dqh5D4mS);
     font-family: Arial, sans-serif;
