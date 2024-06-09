@@ -1,138 +1,8 @@
-/* sobre nós*/
-
-
-body {
-    background-image: url(https://www.cyrela.com.br/sites/default/files/styles/webp/public/2024-03/LA%20ISLA_POOL%20HOUSE.jpg.webp?itok=D9MMofoM);
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-}
-
-.container {
-    width: 90%;
-    margin: 0 auto;
-}
-
-header {
-    background-color: #333;
-    color: rgb(255, 255, 255);
-    padding: 10px 0;
-}
-
- h1 {
-    margin: 0;
-    display: inline-block;
-    padding-left: 20px;
-   font-size: 25px;
-}
-
-nav {
-    display: inline-block;
-    float: right;
-    padding-right: 20px;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-left: 20px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-.container2 h2 {
-    text-align: center;
-    margin-top: 5px;
-    color: #f6f8fb;
-    font-family: "kalam",cursive;
-    text-decoration: double;
-}
-
-.properties {
-padding: 20px 0;
-background-color: #f8f8f8;
-}
-
-.properties h2 {
-text-align: center;
-margin-bottom: 20px;
-}
-
-.property-card {
-background-color: white;
-border: 1px solid #ddd;
-border-radius: 8px;
-overflow: hidden;
-margin-bottom: 20px;
-}
-
-.property-card img {
-width: 100%;
-height: 200px;
-object-fit: cover;
-}
-
-.property-card .details {
-padding: 15px;
-}
-
-.property-card h3 {
-margin-top: 0;
-}
-
-.property-card p {
-margin: 5px 0;
-}
-
-footer {
-background-color: #333;
-position: fixed;
-bottom: 0;
-width: 100%;
-}
-
-footer p {
-    text-align: left;
-    color: white;
-    padding-left: 0%;
-}
-
-.topo a {
-    text-decoration: none;
-    color: #f6f8fb;
-}
-
-@media (min-width: 768px) {
-.property-card {
-display: flex;
-}
-
-
-
-.property-card img {
-    width: 50%;
-    height: auto;
-}
-
-.property-card .details {
-    width: 50%;
-}
-}
 
 
 /*home*/
 body {
-    background-image: url(https://www.cyrela.com.br/sites/default/files/styles/webp/public/2024-02/destaque-desk%20%281%29.png.webp?itok=dqh5D4mS);
+    background-image: 
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -179,7 +49,7 @@ nav ul li a {
 }
 
 .hero {
-    background: url('hero-image.jpg') no-repeat center center/cover;
+    background: url('img/hero-image.jpg') no-repeat center center/cover;
     height: 400px;
     color: white;
     display: flex;
@@ -249,6 +119,157 @@ nav ul li a {
 
 .property-card p {
     margin: 5px 0;
+}
+
+/*simulador*/
+.bg-neutral-blue .d-flex {
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+.d-flex {
+    display: -ms-flexbox !important;
+    display: flex !important;
+}
+* {
+    font-family: Ubuntu, sans-serif !important;
+    outline: none;
+}
+*, :after, :before {
+    box-sizing: border-box;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+folha de estilos de agente de usuário
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, Liberation Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+}
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+}
+:root {
+    --navyBlue: #1a374d;
+    --lightBlue: #2d719f;
+    --lighGray: #c0cdd7;
+    --gold: #eddeaf;
+    --sand: #fff8dd;
+    --black: #061825;
+    --white: #fff;
+    --blueSecondary: #3e92cc;
+    --blueTertiary: #79bedf;
+    --salmon: #ff686b;
+    --neutralBlue: #62829a;
+    --gray: #d4dce2;
+}
+
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+:root {
+    --uk-position-margin-offset: 0px;
+}
+:root {
+    --uk-leader-fill-content: .;
+}
+:root {
+    --uk-breakpoint-s: 640px;
+    --uk-breakpoint-m: 960px;
+    --uk-breakpoint-l: 1200px;
+    --uk-breakpoint-xl: 1600px;
+}
+<style>
+:root, .adopt-t-gPFoht {
+    --adopt-fontSizes-bigTitle: 30px;
+    --adopt-fontSizes-title: 13px;
+    --adopt-fontSizes-text: 12px;
+    --adopt-fontSizes-smallText: 11px;
+    --adopt-lineHeights-title: 1.25em;
+}
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+html {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    background: #fff;
+    color: #666;
+}
+*, :after, :before {
+    box-sizing: border-box;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+*, :after, :before {
+    box-sizing: border-box;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+::selection {
+    background: #39f;
+    color: #fff;
+    text-shadow: none;
 }
 
 footer {
