@@ -1,4 +1,61 @@
+<<<<<<< HEAD
 /* contato*/
+=======
+/* sobre nós*/
+
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .containerContato {
+    background-color: rgba(14, 14, 14, 0.4);
+    max-width: 600px;
+    margin: 40px auto;
+    border: 0 auto;
+    padding-top: 40px;
+    color: rgb(255, 255, 255);
+    border-bottom: 40px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-top: 10px;
+  }
+  
+  input, textarea {
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+  }
+
+
+
+------------------------
+
+>>>>>>> 9353a8ae74929df93b8537bb8acfd436f131d7ae
 
 body {
     background-color: bisque;
@@ -6,6 +63,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+<<<<<<< HEAD
 }
 
 .container {
@@ -73,6 +131,8 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+=======
+>>>>>>> 9353a8ae74929df93b8537bb8acfd436f131d7ae
 }
 
 .container {
@@ -119,6 +179,57 @@ nav ul li a {
 
 
 
+<<<<<<< HEAD
+=======
+body {
+    background-image: url(https://www.cyrela.com.br/sites/default/files/styles/webp/public/2024-02/destaque-desk%20%281%29.png.webp?itok=dqh5D4mS);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+header h1 {
+    margin: 0;
+    display: inline-block;
+    padding-left: 20px;
+}
+
+nav {
+    display: inline-block;
+    float: right;
+    padding-right: 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+>>>>>>> 9353a8ae74929df93b8537bb8acfd436f131d7ae
 
 footer {
     display:flex;
