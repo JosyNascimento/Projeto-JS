@@ -12,7 +12,7 @@
     morar no Rio de Janeiro, casa de luxo">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./style.css" media="all">
+    <link rel="stylesheet" href="style.css" media="all">
     <title>Mirage Living Home</title>
 
 </head>
@@ -22,14 +22,14 @@
     <div class="container-principal">
         <!-- Header Section -->
         <header>
-
-            <h1>Mirage</h1>
-
+            <div class="container-principal"></div>        
+            <a href="./index.html">Mirage</a></li>
+    
             <nav class="menu">
                 <ul>
                     <li><a href="./index.html">Início</a></li>
-                    <li><a href="./Imóveis.html">Imóveis</a></li>
-                    <li><a href="./mirage.html">Mirage</a></li>
+                    <li><a href="./Imoveis.html">Imóveis</a></li>
+                    <li><a href="./quemsomos.html">Quem Somos</a></li>
                     <li><a href="./Contato.html">Contato</a></li>
                 </ul>
             </nav>
@@ -55,40 +55,74 @@
 
                 </div>
             </div>
+            <br><br><br>
         </section>
+        <section class="pd-80 bg-neutral-blue pd-m0">
+            <div class="container">
+                <div class="d-flex">
 
-        <div class="container">
-            <div class="d-flex">
-                <div class="box-sand">
-                    <h4>Imóveis com qualidade e sofisticação Mirage</h4>
-                    <p>A Contrutora Mirage iniciou a sua hitória em 2012 com o objetivo de entregar imóveis
-                        de qualidade a altura dos seus sonhos, buscando constantemente melhorias e inovações </p>
+                    <div class="box-img">
+                        <img src="https://cury.net/website/images/facelift/home.jpg" alt="Mirage">
+                    </div>
+
+                    <div class="box-sand">
+                        <h4>Imóveis com qualidade e sofisticação Mirage</h4>
+                        <p> "A Contrutora Mirage iniciou a sua hitória em 2012 com o objetivo de entregar imóveis
+                            de qualidade a altura dos seus sonhos, buscando constantemente melhorias e inovações"
+                        </p>
+                    </div>
                 </div>
             </div>
 
+            <br><br>    <br><br>
 
-            <main class="simulador">
-
+            <main class="pd-60  simulation">
+                <div class="container">
+                    <div class="text-center">            
                 <h1>Faça uma Simulação</h1>
-                <h3>Para ter de forma rápida uma previsão de como ficaria o financiamento do seu imóvel </h3>
-                <div class="box-img">
-                    <img src="img/hero2.jpg" alt="Mirage">
-                </div>
-            </main>
+                <p>Para ter de forma rápida uma previsão de como ficaria o financiamento do seu imóvel
+                </p>
+                <section class="mortgage-calculator">
+                    <div class="container">
+                        <h2>Simulador de Financiamento</h2>
+                        <form id="simulador-form">
+            <label for="valor-imovel">Valor do Imóvel (R$):</label>
+            <input type="number" id="valor-imovel" required>
 
+            <label for="valor-entrada">Valor da Entrada (R$):</label>
+            <input type="number" id="valor-entrada" required>
+
+            <label for="taxa-juros">Taxa de Juros Anual (%):</label>
+            <input type="number" id="taxa-juros" step="0.01" required>
+
+            <label for="numero-parcelas">Número de Parcelas:</label>
+            <input type="number" id="numero-parcelas" required>
+
+            <button type="button" onclick="calcularFinanciamento()">Calcular</button>
+        </form>
+        <div id="resultado"></div>
+    </div>
+                    </div>
+                </section>
+
+                
+            </div>
         </div>
 
+    </div>
+
+    </main>
 
 
-        <footer>
-            <div class="container">
-                <p>&copy; 2024 Mirage living Home. Todos os direitos reservados.</p>
-            </div>
-            <div class="topo">
-                <a href="#">&#9650;Ir ao topo</a>
-            </div>
-        </footer>
-        <script src="script.js"></script>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Mirage living Home. Todos os direitos reservados.</p>
+        </div>
+        <div class="topo">
+            <a href="#">&#9650;Ir ao topo</a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </div>
 </div>

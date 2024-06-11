@@ -1,13 +1,78 @@
-/* sobre nós*/
-
+/* contato*/
 
 body {
-    background-image: url(https://www.cyrela.com.br/sites/default/files/styles/webp/public/2024-03/LA%20ISLA_POOL%20HOUSE.jpg.webp?itok=D9MMofoM);
+    background-color: bisque;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
 
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/*pgina*/
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .containerContato {
+    background-color: rgba(14, 14, 14, 0.4);
+    max-width: 600px;
+    margin: 40px auto;
+    border: 0 auto;
+    padding-top: 40px;
+    color: rgb(255, 255, 255);
+    border-bottom: 40px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-top: 10px;
+  }
+  
+  input, textarea {
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+  }
+
+
+
+------------------------
+
+
+body {
+    
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .container {
@@ -18,14 +83,16 @@ body {
 header {
     background-color: #333;
     color: rgb(255, 255, 255);
-    padding: 10px 0;
+    padding: 20px 0;
 }
 
- h1 {
+ a {
     margin: 0;
     display: inline-block;
     padding-left: 20px;
    font-size: 25px;
+   color: #ffffff;
+   text-decoration: none;
 }
 
 nav {
@@ -50,208 +117,12 @@ nav ul li a {
     text-decoration: none;
 }
 
-.container2 h2 {
-    text-align: center;
-    margin-top: 5px;
-    color: #f6f8fb;
-    font-family: "kalam",cursive;
-    text-decoration: double;
-}
 
-.properties {
-padding: 20px 0;
-background-color: #f8f8f8;
-}
 
-.properties h2 {
-text-align: center;
-margin-bottom: 20px;
-}
-
-.property-card {
-background-color: white;
-border: 1px solid #ddd;
-border-radius: 8px;
-overflow: hidden;
-margin-bottom: 20px;
-}
-
-.property-card img {
-width: 100%;
-height: 200px;
-object-fit: cover;
-}
-
-.property-card .details {
-padding: 15px;
-}
-
-.property-card h3 {
-margin-top: 0;
-}
-
-.property-card p {
-margin: 5px 0;
-}
 
 footer {
-background-color: #333;
-position: fixed;
-bottom: 0;
-width: 100%;
-}
-
-footer p {
-    text-align: left;
-    color: white;
-    padding-left: 0%;
-}
-
-.topo a {
-    text-decoration: none;
-    color: #f6f8fb;
-}
-
-@media (min-width: 768px) {
-.property-card {
-display: flex;
-}
-
-
-
-.property-card img {
-    width: 50%;
-    height: auto;
-}
-
-.property-card .details {
-    width: 50%;
-}
-}
-
-
-/*home*/
-body {
-    background-image: url(https://www.cyrela.com.br/sites/default/files/styles/webp/public/2024-02/destaque-desk%20%281%29.png.webp?itok=dqh5D4mS);
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.container {
-    width: 90%;
-    margin: 0 auto;
-}
-
-header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-}
-
-header h1 {
-    margin: 0;
-    display: inline-block;
-    padding-left: 20px;
-}
-
-nav {
-    display: inline-block;
-    float: right;
-    padding-right: 20px;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-left: 20px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-.hero {
-    background: url('hero-image.jpg') no-repeat center center/cover;
-    height: 400px;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.hero h2 {
-    font-size: 3em;
-    margin: 0;
-}
-
-.hero form {
-    margin-top: 20px;
-}
-
-.hero input {
-    padding: 10px;
-    font-size: 1em;
-}
-
-.hero button {
-    padding: 10px 20px;
-    font-size: 1em;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-.hero button:hover {
-    background-color: #2ab300;
-}
-
-.properties {
-    padding: 20px 0;
-    background-color: #f8f8f8;
-}
-
-.properties h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.property-card {
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
-    margin-bottom: 20px;
-}
-
-.property-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-.property-card .details {
-    padding: 15px;
-}
-
-.property-card h3 {
-    margin-top: 0;
-}
-
-.property-card p {
-    margin: 5px 0;
-}
-
-footer {
+    display:flex;
+    flex-direction: column;
     padding-block: 0px;
     background-color: #333;
     color: white;
@@ -299,3 +170,11 @@ footer {
     line-height: 1.6;
 }
 
+
+footer {
+    padding-block: 0px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}

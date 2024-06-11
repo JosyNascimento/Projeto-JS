@@ -80,3 +80,127 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+//simulador//
+function financiamentoImovel() {
+    let valorImovel = 560000;
+      let numParcelas = 120;
+      let juros = 0.015; // 1,5% ao mês
+      let saldoDevedor = valorImovel;
+      let parcelas = [];
+      let meses = [];
+
+      for (let i = 1; i <= numParcelas; i++) {
+        let parcela = (saldoDevedor * juros) + (saldoDevedor / numParcelas);
+        parcelas.push(parcela.toFixed(2));
+        meses.push(i);
+        saldoDevedor -= parcela;
+      }
+
+      let tableBody = document.getElementById("table-body");
+      for (let i = 0; i < parcelas.length; i++) {
+        let row = document.createElement("tr");
+        row.innerHTML = `
+          <td>${meses[i]}</td>
+          <td>R$ ${parcelas[i]}</td>
+          <td>R$ ${((saldoDevedor * juros).toFixed(2))}</td>
+          <td>R$ ${((saldoDevedor - parcelas[i]).toFixed(2))}</td>
+          <td>R$ ${saldoDevedor.toFixed(2)}</td>`;
+        tableBody.appendChild(row);
+      }
+
+      }
+      
+  financiamentoImovel();
+
+  //simulador
+  
+
+  function calcularFinanciamento() {
+    // Obtendo os valores de entrada do formulário
+    const valorImovel = parseFloat(document.getElementById('valor-imovel').value);
+    const valorEntrada = parseFloat(document.getElementById('valor-entrada').value);
+    const taxaJurosAnual = parseFloat(document.getElementById('taxa-juros').value) / 100;
+    const numeroParcelas = parseInt(document.getElementById('numero-parcelas').value);
+
+    // Validações básicas dos valores de entrada
+    if (isNaN(valorImovel) || isNaN(valorEntrada) || isNaN(taxaJurosAnual) || isNaN(numeroParcelas)) {
+        alert('Por favor, preencha todos os campos corretamente.');
+        return;
+    }
+
+    if (valorEntrada >= valorImovel) {
+        alert('O valor da entrada deve ser menor que o valor do imóvel.');
+        return;
+    }
+
+    if (taxaJurosAnual <= 0 || numeroParcelas <= 0) {
+        alert('A taxa de juros e o número de parcelas devem ser valores positivos.');
+        return;
+    }
+
+    // Calculando o valor financiado
+    const valorFinanciado = valorImovel - valorEntrada;
+
+    // Convertendo a taxa de juros anual para taxa de juros mensal
+    const taxaJurosMensal = Math.pow(1 + taxaJurosAnual, 1 / 12) - 1;
+
+    // Fórmula para cálculo da prestação mensal (sistema de amortização Price)
+    const prestacaoMensal = (valorFinanciado * taxaJurosMensal) / (1 - Math.pow(1 + taxaJurosMensal, -numeroParcelas));
+
+    // Inicializando variáveis para o cálculo mês a mês
+    let saldoDevedor = valorFinanciado;
+    let detalhesPrestacoes = [];
+
+    for (let i = 1; i <= numeroParcelas; i++) {
+        const juros = saldoDevedor * taxaJurosMensal;
+        const amortizacao = prestacaoMensal - juros;
+        saldoDevedor -= amortizacao;
+
+        detalhesPrestacoes.push({
+            mes: i,
+            prestacao: prestacaoMensal,
+            juros: juros,
+            amortizacao: amortizacao,
+            saldoDevedor: saldoDevedor
+        });
+    }
+
+    // Exibindo o resultado na página
+    const resultadoDiv = document.getElementById('resultado');
+    resultadoDiv.innerHTML = `
+        <p><strong>Valor Financiado:</strong> R$ ${valorFinanciado.toFixed(2)}</p>
+        <p><strong>Taxa de Juros Mensal:</strong> ${(taxaJurosMensal * 100).toFixed(2)}%</p>
+        <p><strong>Número de Parcelas:</strong> ${numeroParcelas}</p>
+        <p><strong>Valor da Prestação Mensal:</strong> R$ ${prestacaoMensal.toFixed(2)}</p>
+        <h2>Detalhes das Prestações</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Mês</th>
+                    <th>Prestação (R$)</th>
+                    <th>Juros (R$)</th>
+                    <th>Amortização (R$)</th>
+                    <th>Saldo Devedor (R$)</th>
+                </tr>
+            </thead>
+            <tbody>
+                ${detalhesPrestacoes.map(prestacao => `
+                    <tr>
+                        <td>${prestacao.mes}</td>
+                        <td>${prestacao.prestacao.toFixed(2)}</td>
+                        <td>${prestacao.juros.toFixed(2)}</td>
+                        <td>${prestacao.amortizacao.toFixed(2)}</td>
+                        <td>${prestacao.saldoDevedor.toFixed(2)}</td>
+                    </tr>
+                `).join('')}
+            </tbody>
+        </table>
+    `;
+}
+
+// Adicionando um listener para o botão de calcular para melhorar a organização do código
+document.getElementById('simulador-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    calcularFinanciamento();
+});
+
