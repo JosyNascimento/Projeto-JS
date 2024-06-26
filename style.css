@@ -2,7 +2,7 @@
 
 /*home*/
 body {
-    background-image: url(https://www.cyrela.com.br/sites/default/files/styles/webp/public/2024-02/destaque-desk%20%281%29.png.webp?itok=dqh5D4mS);
+    background-color: #007bff3e;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -16,16 +16,18 @@ body {
 
 header {
     background-color: #333;
-    color: white;
-    padding: 10px 0;
+    color: rgb(255, 255, 255);
+    padding: 0px 0;
 }
 
-header h1 {
+a {
     margin: 0;
     display: inline-block;
     padding-left: 20px;
+   font-size: 25px;
+   color: #ffffff;
+   text-decoration: none;
 }
-
 nav {
     display: inline-block;
     float: right;
@@ -48,8 +50,9 @@ nav ul li a {
     text-decoration: none;
 }
 
+
 .hero {
-    background: url('hero-image.jpg') no-repeat center center/cover;
+    background-image: url(https://www.cyrela.com.br/sites/default/files/styles/webp/public/2024-02/destaque-desk%20%281%29.png.webp?itok=dqh5D4mS);
     height: 400px;
     color: white;
     display: flex;
@@ -121,12 +124,125 @@ nav ul li a {
     margin: 5px 0;
 }
 
+
+/*simulador*/
+.bg-neutral-blue {
+    justify-content: space-between;
+    align-items: flex-start;
+   
+
+}
+.d-flex {
+    display: -ms-flexbox !important;
+    display: flex !important;
+    color: whitesmoke;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+.box-sand {
+    background: var(--sand);
+    padding: 60px 45px;
+    border-radius: 4px;
+    width: 40%;
+    background-color: #333;
+    align-items: right;
+}
+
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+user agent stylesheet
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+
+.pd-80 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+   
+}
+
+.box-img {
+    max-width:200px;
+    max-height:150px;
+
+    margin-block: 15px;
+   
+}
+
+.pd-60 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: rgba(128, 128, 128, 0.527);
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.title p {
+    color: #ddd;
+
+}
+h1 {
+    color: #ddd; 
+    text-align: center;
+    font-size: xxx-large;
+}
+
+
+/*simulador*/
+
+h1 {
+    text-align: center;
+  }
+  .container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(228, 228, 232, 0.217);
+  }
+  .table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  .table th, .table td {
+    border: 1px solid #84d442ed;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  button:hover {
+    background-color: #ade61e;
+}
+  
+
+
 footer {
     padding-block: 0px;
     background-color: #333;
     color: white;
     text-align: center;
     padding: 10px 0;
+}
+
+.footer p{
+    text-align: left;
+}
+
+
+.footer a{ 
+    text-align: right;
+    padding-block: 20px;
+  
 }
 
 @media (min-width: 768px) {
