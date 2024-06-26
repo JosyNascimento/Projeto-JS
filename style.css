@@ -2,7 +2,7 @@
 
 /*home*/
 body {
-    background-image: url(https://www.cyrela.com.br/sites/default/files/styles/webp/public/2024-02/destaque-desk%20%281%29.png.webp?itok=dqh5D4mS);
+    background-color: #007bff3e;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -52,7 +52,7 @@ nav ul li a {
 
 
 .hero {
-    background: url('hero-image.jpg') no-repeat center center/cover;
+    background-image: url(https://www.cyrela.com.br/sites/default/files/styles/webp/public/2024-02/destaque-desk%20%281%29.png.webp?itok=dqh5D4mS);
     height: 400px;
     color: white;
     display: flex;
@@ -129,7 +129,7 @@ nav ul li a {
 .bg-neutral-blue {
     justify-content: space-between;
     align-items: flex-start;
-    background-color;: img/home.jpg;
+   
 
 }
 .d-flex {
@@ -141,32 +141,13 @@ nav ul li a {
 }
 
 
-.pd-40 {
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
-article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
-    display: block;
-}
-article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
-    display: block;
-}
-* {
-    font-family: Ubuntu, sans-serif !important;
-    outline: none;
-}
-*, :after, :before {
-    box-sizing: border-box;
-}
-
 .box-sand {
     background: var(--sand);
     padding: 60px 45px;
     border-radius: 4px;
     width: 40%;
     background-color: #333;
-    align-items: right
-    ;
+    align-items: right;
 }
 
 
@@ -239,13 +220,29 @@ h1 {
     text-align: left;
   }
   
+  button:hover {
+    background-color: #ade61e;
+}
   
+
+
 footer {
     padding-block: 0px;
     background-color: #333;
     color: white;
     text-align: center;
     padding: 10px 0;
+}
+
+.footer p{
+    text-align: left;
+}
+
+
+.footer a{ 
+    text-align: right;
+    padding-block: 20px;
+  
 }
 
 @media (min-width: 768px) {

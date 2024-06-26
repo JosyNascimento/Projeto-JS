@@ -1,291 +1,76 @@
-<<<<<<< HEAD
-/* contato*/
-=======
-/* sobre nós*/
-
-  .container {
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  
-  .center{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  .containerContato {
-    background-color: rgba(14, 14, 14, 0.4);
-    max-width: 600px;
-    margin: 40px auto;
-    border: 0 auto;
-    padding-top: 40px;
-    color: rgb(255, 255, 255);
-    border-bottom: 40px;
-  }
-
-  form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  label {
-    margin-top: 10px;
-  }
-  
-  input, textarea {
-    padding: 10px;
-    margin-top: 5px;
-    font-size: 16px;
-    width: 100%;
-    box-sizing: border-box;
-  }
-  
-  button {
-    margin-top: 20px;
-    padding: 10px;
-    font-size: 16px;
-    cursor: pointer;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-  }
-
-
-
-------------------------
-
->>>>>>> 9353a8ae74929df93b8537bb8acfd436f131d7ae
 
 body {
-    background-color: bisque;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-<<<<<<< HEAD
+  background-image: url();
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
 }
 
 .container {
-    width: 90%;
-    margin: 0 auto;
-}
-
-/*pgina*/
-.container {
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  
-  .center{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  .containerContato {
-    background-color: rgba(14, 14, 14, 0.4);
-    max-width: 600px;
-    margin: 40px auto;
-    border: 0 auto;
-    padding-top: 40px;
-    color: rgb(255, 255, 255);
-    border-bottom: 40px;
-  }
-
-  form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  label {
-    margin-top: 10px;
-  }
-  
-  input, textarea {
-    padding: 10px;
-    margin-top: 5px;
-    font-size: 16px;
     width: 100%;
-    box-sizing: border-box;
-  }
-  
-  button {
-    margin-top: 20px;
-    padding: 10px;
-    font-size: 16px;
-    cursor: pointer;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-  }
-
-
-
-------------------------
-
-
-body {
-    
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-=======
->>>>>>> 9353a8ae74929df93b8537bb8acfd436f131d7ae
-}
-
-.container {
-    width: 90%;
+    height: 100%;
     margin: 0 auto;
 }
 
 header {
-    background-color: #333;
-    color: rgb(255, 255, 255);
-    padding: 20px 0;
+  background-color: #333;
+  color: rgb(255, 255, 255);
+  padding: 0px 0;
 }
 
- a {
-    margin: 0;
-    display: inline-block;
-    padding-left: 20px;
-   font-size: 25px;
-   color: #ffffff;
-   text-decoration: none;
+a {
+  margin: 0;
+  display: inline-block;
+  padding-left: 20px;
+ font-size: 25px;
+ color: #ffffff;
+ text-decoration: none;
 }
-
 nav {
-    display: inline-block;
-    float: right;
-    padding-right: 20px;
+  display: inline-block;
+  float: right;
+  padding-right: 20px;
 }
 
 nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 nav ul li {
-    display: inline;
-    margin-left: 20px;
+  display: inline;
+  margin-left: 20px;
 }
 
 nav ul li a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
-
-
-<<<<<<< HEAD
-=======
-body {
-    background-image: url(https://www.cyrela.com.br/sites/default/files/styles/webp/public/2024-02/destaque-desk%20%281%29.png.webp?itok=dqh5D4mS);
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.container {
-    width: 90%;
-    margin: 0 auto;
-}
-
-header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-}
-
-header h1 {
-    margin: 0;
-    display: inline-block;
-    padding-left: 20px;
-}
-
-nav {
-    display: inline-block;
-    float: right;
-    padding-right: 20px;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-left: 20px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-
->>>>>>> 9353a8ae74929df93b8537bb8acfd436f131d7ae
-
-footer {
-    display:flex;
-    flex-direction: column;
-    padding-block: 0px;
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-}
 
 @media (min-width: 768px) {
-    .property-card {
-        display: flex;
-    }
-
-    .property-card img {
-        width: 50%;
-        height: auto;
-    }
-
-    .property-card .details {
-        width: 50%;
-    }
-}
-
-.about-us {
-    padding: 20px 0;
-    background-color: #ffffff;
-}
-
-.about-us h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.about-us p {
-    text-align: justify;
-    line-height: 1.6;
-}
-
-.about-us h3 {
-    margin-top: 20px;
-}
-
-.about-us ul {
-    list-style: disc;
-    margin-left: 20px;
-    line-height: 1.6;
+  
 }
 
 
 footer {
-    padding-block: 0px;
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-}
+  background-color: #333;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  }
+  
+  footer p {
+      text-align: left;
+      color: white;
+      padding-left: 0%;
+  }
+  
+  .topo a {
+      text-decoration: none;
+      color: #f6f8fb;
+     text-align: right;
+  }

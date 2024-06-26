@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-//simulador//
+//simulador
 function financiamentoImovel() {
     let valorImovel = 560000;
       let numParcelas = 120;
@@ -192,15 +192,19 @@ function financiamentoImovel() {
                         <td>${prestacao.amortizacao.toFixed(2)}</td>
                         <td>${prestacao.saldoDevedor.toFixed(2)}</td>
                     </tr>
+                    
                 `).join('')}
             </tbody>
         </table>
     `;
 }
 
+
+
 // Adicionando um listener para o botão de calcular para melhorar a organização do código
 document.getElementById('simulador-form').addEventListener('submit', function(event) {
     event.preventDefault();
     calcularFinanciamento();
 });
+
 
