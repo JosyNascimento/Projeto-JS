@@ -1,9 +1,12 @@
 /* sobre nós*/
 
-  .container {
-    max-width: 600px;
+  .containerPush {
+    max-width: 400px;
     margin: 0 auto;
   }
+
+
+
   
   .center{
     display: flex;
@@ -11,7 +14,7 @@
     align-items: center;
     text-align: center;
   }
-  .containerContato {
+  .containerPush {
     background-color: rgba(14, 14, 14, 0.4);
     max-width: 600px;
     margin: 40px auto;
@@ -60,6 +63,7 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+
 
 .container {
     width: 90%;
