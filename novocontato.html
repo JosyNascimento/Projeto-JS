@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gerenciamento de Contatos</title>
+    <link rel="stylesheet" href="novostylecontato.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Informe sua procura</h1>
+      <form id="contactForm">
+        <label for="name">Nome:</label>
+        <input type="text" id="nome" name="nome" required />
+
+        <label for="phone">Telefone:</label>
+        <input type="text" id="telefone" name="telefone" required />
+
+        <label for="cidade">Cidade onde deseja morar:</label>
+        <input type="text" id="cidade" name="cidade" required />
+
+        <label for="preco">Faixa de preço que procura:</label>
+        <input type="text" id="preco" name="preco" required />
+
+        <button type="submit">Adicionar Contato</button>
+      </form>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Telefone</th>
+            <th>Cidade</th>
+            <th>Valor</th>
+          </tr>
+        </thead>
+        <tbody id="contactList"></tbody>
+      </table>
+    </div>
+
+    <script src="novocontato.js"></script>
+  </body>
+</html>

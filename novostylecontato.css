@@ -1,0 +1,78 @@
+/* body {
+  background-image: url(img/hero-image.jpg);
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+body {
+  position: relative;
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("img/hero-image.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.2; /* Ajuste o valor da opacidade conforme necessário */
+  z-index: -1; /* Certifique-se de que o pseudo-elemento fique atrás do conteúdo */
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+}
+
+input {
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
