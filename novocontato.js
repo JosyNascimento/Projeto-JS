@@ -1,6 +1,3 @@
-
-
-
 document.getElementById('contactForm').addEventListener('submit', (event) => {
     event.preventDefault();
   
@@ -27,5 +24,20 @@ document.getElementById('contactForm').addEventListener('submit', (event) => {
     row.insertCell(1).innerText = contact.telefone;
     row.insertCell(2).innerText = contact.cidade;
     row.insertCell(3).innerText = contact.preco;
-  };
+
+    localStorage.setItem("NomeDoContatoSite", contact.nome);
+    const info1 = localStorage.getItem("NomeDoContatoSite");
+
+    localStorage.setItem("TelefoneDoContatoSite", contact.telefone);
+    const info2 = localStorage.getItem("TelefoneDoContatoSite");
+
+    localStorage.setItem("CidadeDoContatoSite", contact.cidade);
+    const info3 = localStorage.getItem("idadeDoContatoSite");
   
+    localStorage.setItem("ValorDoContatoSite", contact.preco);
+    const info4 = localStorage.getItem("ValorDoContatoSite");
+  };
+
+
+
+ 
